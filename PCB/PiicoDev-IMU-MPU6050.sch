@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "PiicoDev Motion Sensor MPU-6050"
 Date "2021-05-07"
-Rev "1"
+Rev "10"
 Comp ""
 Comment1 "Designed at Core Electronics by Peter Johnston"
 Comment2 "PiicoDev and the PiicoDev logo are trademarks of Core Electronics Pty Ltd."

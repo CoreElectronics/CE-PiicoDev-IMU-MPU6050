@@ -24,5 +24,5 @@ kikit panelize grid \
 --railsTb 10.025 \
 --fiducials 12.5 7.5 1.5 3 \
 --tooling 5 5 3 \
-kikit/PiicoDev-Distance-Sensor-VL53L1X.kicad_pcb \
-"kikit/P104 v10 $now".kicad_pcb
+kikit/PiicoDev-IMU-MPU6050.kicad_pcb \
+"kikit/P138 v10 $now".kicad_pcb
