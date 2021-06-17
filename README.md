@@ -1,19 +1,35 @@
-# PiicoDev Precision Temperature Sensor TMP117
+# PiicoDev® Motion Sensor MPU-6050
 
-![](Documents/showcase-render.png)
+![](Documents/piicodev-motion-sensor.jpg)
 
-This is the repo for the [PiicoDev](https://piico.dev) Precision Temperature Sensor TMP117 PCB.
+This is the repo for the Core Electronics [PiicoDev Motion Sensor MPU-6050](https://core-electronics.com.au/catalog/product/view/sku/CE07822).
 
-The TMP117 is a low-power, high-precision temperature sensor with an accuracy up to +/-0.1 °C (over range -20 to +50 °C) with no calibration required. The device has an operating range of -55 °C to +150 °C.
+Our PiicoDev® Motion Sensor makes it super easy to detect linear or angular motion in your next project. The Motion Sensor features a the ubiquitous MPU-6050 6-axis Inertial Measurement Unit (IMU) featuring 16-bit resolution Accelerometer and Gyroscope.
 
-On-board jumpers allow for selecting four different addresses.
+## Features
 
-# License
+ - Measure linear motion, angular motion
+ - Detect freefall or bumps/knocks
+ - PiicoDev connector, compatible with Qwiic and STEMMA QT (3.3V only)
+ - 2.54mm breakout for breadboarding/prototyping
+ - Manufactured and [supported](https://core-electronics.com.au/contacts/) in Australia by Core Electronics
+
+## Technical Specifications
+
+ - Default I2C address: 0x68 (Pull ADR high, or solder the address jumper for 0x69)
+ - Dimensions: 25.4x25.4mm
+ - Mounting Holes: 2x M2.5
+ - MPU6050:
+   - Operating Voltage: 2.375 to 3.46V
+   - Accelerometer Sensitivity: ±2 / ±4 / ±8 / ±16 g
+   - Gyroscope Sensitivity: ±250 / ±500 / ±1000 / ±2000 °/s
+   - Accelerometer Zero-G output (25°C, worst case): ±80mg
+   - Gyroscope Zero-Rate output (25°C): ±20°/s
+
+## License
 This project is open source - please review the LICENSE.md file for further licensing information.
 
 If you have any technical questions, or concerns about licensing, please contact technical support on the [Core Electronics forums](https://forum.core-electronics.com.au/).
 
-# Attribution
-The hardware design of this module is influenced by the design from [Sparkfun](https://github.com/sparkfun/SparkFun_High_Precision_Temperature_Sensor_TMP117_Qwiic).
 
 *\"PiicoDev\" and the PiicoDev logo are trademarks of Core Electronics Pty Ltd.*
