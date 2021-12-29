@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PiicoDev Motion Sensor MPU-6050"
-Date "2021-09-20"
-Rev "12"
+Date "2021-12-29"
+Rev "13"
 Comp ""
 Comment1 "Designed at Core Electronics by Peter Johnston"
 Comment2 "PiicoDev and the PiicoDev logo are trademarks of Core Electronics Pty Ltd."
@@ -18,7 +18,7 @@ L Device:R R3
 U 1 1 5F90E922
 P 7600 3350
 F 0 "R3" H 7670 3396 50  0000 L CNN
-F 1 "4k7" H 7670 3305 50  0000 L CNN
+F 1 "10k" H 7670 3305 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 7530 3350 50  0001 C CNN
 F 3 "~" H 7600 3350 50  0001 C CNN
 	1    7600 3350
@@ -44,7 +44,7 @@ L Device:R R4
 U 1 1 5F90E7BD
 P 7000 3350
 F 0 "R4" H 7070 3396 50  0000 L CNN
-F 1 "4k7" H 7070 3305 50  0000 L CNN
+F 1 "10k" H 7070 3305 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6930 3350 50  0001 C CNN
 F 3 "~" H 7000 3350 50  0001 C CNN
 	1    7000 3350
@@ -134,7 +134,7 @@ U 1 1 5F9150B4
 P 1650 3400
 F 0 "JP1" V 1604 3468 50  0000 L CNN
 F 1 "LED" V 1695 3468 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1650 3400 50  0001 C CNN
+F 2 "CoreElectronics_Components:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1650 3400 50  0001 C CNN
 F 3 "~" H 1650 3400 50  0001 C CNN
 	1    1650 3400
 	0    1    1    0   
@@ -146,7 +146,7 @@ L Device:R R1
 U 1 1 5F915BCC
 P 1650 3750
 F 0 "R1" H 1720 3796 50  0000 L CNN
-F 1 "1k" H 1720 3705 50  0000 L CNN
+F 1 "10k" H 1720 3705 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 1580 3750 50  0001 C CNN
 F 3 "~" H 1650 3750 50  0001 C CNN
 	1    1650 3750
@@ -525,7 +525,7 @@ L Device:R R5
 U 1 1 60772AFF
 P 3300 4050
 F 0 "R5" H 3370 4096 50  0000 L CNN
-F 1 "4k7" H 3370 4005 50  0000 L CNN
+F 1 "10k" H 3370 4005 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 3230 4050 50  0001 C CNN
 F 3 "~" H 3300 4050 50  0001 C CNN
 	1    3300 4050
@@ -547,26 +547,11 @@ F 3 "" H 3300 2650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3300 3600 3650 3600
-$Comp
-L Jumper:SolderJumper_2_Open JP2
-U 1 1 60791023
-P 3300 3250
-F 0 "JP2" V 3254 3318 50  0000 L CNN
-F 1 "ADR" V 3345 3318 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3300 3250 50  0001 C CNN
-F 3 "~" H 3300 3250 50  0001 C CNN
-	1    3300 3250
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3300 4400 3300 4200
 Wire Wire Line
 	3300 3900 3300 3600
 Connection ~ 3300 3600
-Wire Wire Line
-	3300 3400 3300 3600
-Wire Wire Line
-	3300 2650 3300 3100
 $Comp
 L Device:C C4
 U 1 1 60764CBC
@@ -673,4 +658,19 @@ Wire Notes Line
 	5300 7700 5300 6800
 Text Notes 5300 6800 0    50   ~ 0
 ERC Metadata
+$Comp
+L Switch:SW_DIP_x01 SW1
+U 1 1 61D07656
+P 3300 3250
+F 0 "SW1" V 3346 3120 50  0000 R CNN
+F 1 "SW_DIP_x01" V 3255 3120 50  0000 R CNN
+F 2 "CoreElectronics_Components:SW_DIP_x01_Slide_CHS-01A1" H 3300 3250 50  0001 C CNN
+F 3 "~" H 3300 3250 50  0001 C CNN
+	1    3300 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3300 2950 3300 2650
+Wire Wire Line
+	3300 3550 3300 3600
 $EndSCHEMATC
