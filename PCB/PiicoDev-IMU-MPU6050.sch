@@ -432,7 +432,6 @@ Wire Wire Line
 Connection ~ 7600 3800
 Wire Wire Line
 	7000 3700 8000 3700
-Connection ~ 7000 3700
 $Comp
 L Sensor_Motion:MPU-6050 U1
 U 1 1 607525C2
@@ -454,8 +453,6 @@ Wire Wire Line
 	3600 2700 5250 2700
 Wire Wire Line
 	5250 2700 5250 3700
-Wire Wire Line
-	5250 3700 7000 3700
 Wire Wire Line
 	3650 3500 3550 3500
 Wire Wire Line
@@ -673,4 +670,20 @@ Wire Wire Line
 	3300 2950 3300 2650
 Wire Wire Line
 	3300 3550 3300 3600
+$Comp
+L Device:R R2
+U 1 1 61D7A5CE
+P 5950 3700
+F 0 "R2" V 5743 3700 50  0000 C CNN
+F 1 "120R" V 5834 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5880 3700 50  0001 C CNN
+F 3 "~" H 5950 3700 50  0001 C CNN
+	1    5950 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 3700 5800 3700
+Wire Wire Line
+	6100 3700 7000 3700
+Connection ~ 7000 3700
 $EndSCHEMATC
