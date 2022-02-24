@@ -6,8 +6,8 @@
 
   (title_block
     (title "PiicoDev Motion Sensor MPU-6050")
-    (date "2021-12-29")
-    (rev "13")
+    (date "2022-02-23")
+    (rev "14")
     (comment 1 "Designed at Core Electronics by Peter Johnston")
     (comment 2 "PiicoDev and the PiicoDev logo are trademarks of Core Electronics Pty Ltd.")
     (comment 3 "License: CCASAv4.0 http://creativecommons.org/licenses/by-sa/4.0")
